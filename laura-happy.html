@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<title>Laura Happy Ending</title>
+<link rel="icon" href="dokidoki.png">
+<meta charset="UTF-8">
+<meta name="author" content="Lynca">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="csproject.css">
+
+<style>
+html, body
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body {overflow-x: hidden;}
+div, h1, h2, h3, p {font-family: "Chalkduster", sans-serif}
+
+body{
+        background-image: url("https://games.renpy.org/media/screenshot/an-eden-of-lust-christmas-story-Bedroom.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+	align-items: center;
+	align-content: center;
+	align-self: center;
+}
+
+nav {background-color:#cccccc;
+}
+
+.footer {
+   position: fixed;
+   left: 10%;
+   right: 10%;
+   bottom: 10%;
+   width: 80%;
+   background-color: rgba(255, 255, 255, 0.6);   
+   border: 2px solid white;
+   border-radius: 25px;
+   color: black;
+   text-align: left;
+}
+.button {
+  float: right;
+  border-radius: 2px;
+  border: 2px solid white;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 8px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2 {
+  float: left;
+  border-radius: 2px;
+  border: 2px solid white;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:before {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -8px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-left: 8px;
+}
+
+.button2:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+input[type=submit]{
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover{opacity: 0.6; transition: 0.3s}
+.centered {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<body>
+
+<p class="centered" id="myDIV5"></p>
+<p class="centered" id="myDIV4"></p>
+<p class="centered" id="myDIV3"></p>
+<center><p class="centered" id="myDIV2"></p></center>
+
+<nav>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+    <a href="intro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOKI DOKI CS CLUB?</a>
+    <a href="partner.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">YOUR WAIFU</a>
+    <a href="characters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE CHARACTERS</a>
+    <a href="creds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CREDITS</a>
+  </div>
+</div>
+</nav>
+
+<div class="footer">
+<h3 id="name">&nbsp; You</h3>
+<p id="myDIV1">&nbsp; What is this...? <br>
+    <button onclick="myFunction()" class="button"><span>Next&nbsp;</span></button></p>
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV1").innerHTML = 
+  "&nbsp; <i>I couldn't believe what I saw.<br>&nbsp; Laura's room was full of pictures of me...<br>&nbsp; There's even a shrine with my lost pencil, pens... I was wondering where they had gone, but I hadn't <br>&nbsp; expected them to be here.</i> <button onclick='myFunction0()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction0() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Aww, senpai... you've seen it...<br><button onclick='myFunction()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunctiona()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("myDIV3").innerHTML = "<img src='laura.png' width='500' height='550'>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunctiona() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; L-Laura... What is all of this?<br><button onclick='myFunction0()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunctionb()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunctionb() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Aren't you happy, senpai?<br>&nbsp; All of this is my expression of my love towards you...<br><button onclick='myFunctiona()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction1()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunction1() {
+  document.getElementById("myDIV1").innerHTML = 
+  "&nbsp; T-Thanks...?<br><br>&nbsp; <i>How in the world am I supposed to react?<br>&nbsp; Laura is honestly freaking me out...</i> <br><button onclick='myFunctionb()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction2()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction2() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Oh senpai, don't look so frightened...<br><button onclick='myFunction1()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction3()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunction3() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; H-Hey, Laura... the rain looks like it's almost gonna stop...<br>&nbsp; I think I should be on my way home... <br><button onclick='myFunction2()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction4()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction4() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; ...<br>&nbsp; ARE YOU TRYING TO ESCAPE FROM ME?!?!?!?!<br><button onclick='myFunction3()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction5()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunction5() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; ?!?!?!?!?!?!<br>&nbsp; <i>I've never heard Laura raise her voice like that before. <br>&nbsp; Plus, escape...?<br><br><br>&nbsp; I hear the door lock click behind her.</i><br><button onclick='myFunction4()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction6()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction6() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; You're not getting away from me, senpai...♡♡♡♡♡♡♡<br><button onclick='myFunction5()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction7()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunction7() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>I try to get away, but Laura grabs my arm and won't let go.<br><br>&nbsp; While holding on to my arm, Laura puts a chain on my arm.</i><br><button onclick='myFunction6()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction8()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction8() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>WTF?!</i><br><br>&nbsp; Laura, what is this?! Let me go!<br><button onclick='myFunction7()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction9()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction9() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Now you can't get away from me, senpai...♡♡♡♡♡♡♡<br><button onclick='myFunction8()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction10()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML =  "&nbsp; Laura"
+  document.getElementById("myDIV5").innerHTML = "<p><img src='http://res.freestockphotos.biz/pictures/6/6979-illustration-of-a-blank-frame-border-of-chains-pv.png' width='500' height='400'></p>"; 
+}
+function myFunction10() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>The next moment, Laura covers my mouth with a piece of cloth.<br>&nbsp; There's some drug on the cloth...<br>&nbsp; It smells nice, and my consciousness is slipping away...</i><br><button onclick='myFunction9()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction11()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction11() {
+  document.getElementById("myDIV1").innerHTML =  
+  "<button onclick='myFunction10()' class='button2'><span>&nbsp;Previous</span></button>";
+  document.getElementById("myDIV2").innerHTML = 
+  "<p onclick='myFunction12()'><input type='submit' value='Days later...'></p>";
+  document.getElementById("name").innerHTML =  ""
+}
+function myFunction12() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Senpai~~~ here's your food for today~~~<br><button onclick='myFunction11()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction13()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+  document.getElementById("myDIV2").innerHTML = ""
+}
+function myFunction13() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>How many days has it been since I've been locked in Laura's room?...<br>&nbsp; I haven't seen the sunlight for days.<br>&nbsp; Laura just comes to her room to feed me and talk to me everyday.</i><br><button onclick='myFunction12()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction14()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction14() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>I don't know why I hadn't realized before...<br>&nbsp; Laura's a complete yandere.<br>&nbsp; She always stared at me from the corner, and stole my stuff when I wasn't looking.<br>&nbsp; That day, the day I was stalked, I was being followed around by Laura.<br>&nbsp; A few weeks back, I had also broken up with my girlfriend.<br>&nbsp; Laura later told me that she told my girlfriend false rumors about me to make her hate me, just so <br>&nbsp; that Laura can be by my side.</i><br><button onclick='myFunction13()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction15()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction15() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>I've honestly given up trying to get away...<br><br>&nbsp; Laura nearly killed me the last time I tried.</i><br><button onclick='myFunction14()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction16()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction16() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Laura's extremely nice to me, except for when I disobey her.<br>&nbsp; I've gotten really skinny; I no longer have the physical power or the emotional will to fight back.</i><br><button onclick='myFunction15()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction17()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction17() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Senpai~~~ We'll be together forever and ever, okay? ♡♡♡♡♡♡♡<br><button onclick='myFunction16()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction18()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Laura"
+}
+function myFunction18() {
+  document.getElementById("myDIV1").innerHTML = "";
+  document.getElementById("name").innerHTML = " "; 
+  document.getElementById("myDIV2").innerHTML = "<center><h2 style='color:black; background-color: rgba(255, 255, 255, 0.6)'>THE END<br>Route: Happy...?</h2></center>";
+}
+
+///
+
+var trailLength = 8 
+var path = "http://www.javascriptkit.com/script/script2/cursor.gif" 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body 
+var i,d = 0
+
+function initTrail() { 
+	images = new Array() 
+	for (i = 0; i < parseInt(trailLength); i++) {
+		images[i] = new Image()
+		images[i].src = path
+	}
+	storage = new Array() 
+	for (i = 0; i < images.length*3; i++) {
+		storage[i] = 0
+	}
+	for (i = 0; i < images.length; i++) { 
+		document.write('<div id="obj' + i + '" style="position: absolute; z-Index: 100; height: 0; width: 0"><img src="' + images[i].src + '"></div>')
+	}
+	trail()
+}
+function trail() { 
+	for (i = 0; i < images.length; i++) { 
+		document.getElementById("obj" + i).style.top = storage[d]+'px' 
+		document.getElementById("obj" + i).style.left = + storage[d+1]+'px' 
+		d = d+2
+	}
+	for (i = storage.length; i >= 2; i--) { 
+		storage[i] = storage[i-2]
+	}
+	d = 0 
+	var timer = setTimeout("trail()",10) 
+}
+function processEvent(e) { 
+	if (window.event) { 
+		storage[0] = window.event.y+standardbody.scrollTop+10
+		storage[1] = window.event.x+standardbody.scrollLeft+10
+	} else {
+		storage[0] = e.pageY+12
+		storage[1] = e.pageX+12
+	}
+}
+
+	initTrail() 
+	document.onmousemove = processEvent
+</script>	
+
+</body>
+</html>

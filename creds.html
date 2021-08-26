@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>Credits</title>
+<link rel="icon" href="dokidoki.png">
+<meta charset="UTF-8">
+<meta name="author" content="Lynca">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body {overflow-x: hidden; background-color:#ffffcc}
+body, html {height: 100%}
+h1, h3 {font-family: Chalkduster, serif; color:#ffccff}
+h2 {font-family: Snell Roundhand, cursive} 
+
+.button {
+  border-radius: 25px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</style>
+
+
+<nav>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+    <a href="intro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOKI DOKI CS CLUB?</a>
+    <a href="partner.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WHO'S YOUR PARTNER?</a>
+    <a href="characters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE CHARACTERS</a>
+    <a href="creds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CREDITS</a>
+  </div>
+</div>
+</nav>
+
+<br<br><br><br><br>
+<h1><center>Everything made by Lynca Saito, practically on the verge of death
+staring at her computer for hours.</h1></center>
+<h3><center>Somewhat influenced by Doki Doki Literature Club, 'cause who doesn't love that game?</h3></center>
+<center><h3>Btw, I don't like pink as a color too much, but I'm using it anyway.</center></h3>
+<img src="https://cdn-images-1.medium.com/max/1600/1*-_pkBlUircBc2Mp2z4_d3g.png" width="100%">
+
+
+<script>
+var trailLength = 8 
+var path = "http://www.javascriptkit.com/script/script2/cursor.gif" 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body 
+var i,d = 0
+
+function initTrail() { 
+	images = new Array() 
+	for (i = 0; i < parseInt(trailLength); i++) {
+		images[i] = new Image()
+		images[i].src = path
+	}
+	storage = new Array() 
+	for (i = 0; i < images.length*3; i++) {
+		storage[i] = 0
+	}
+	for (i = 0; i < images.length; i++) { 
+		document.write('<div id="obj' + i + '" style="position: absolute; z-Index: 100; height: 0; width: 0"><img src="' + images[i].src + '"></div>')
+	}
+	trail()
+}
+function trail() { 
+	for (i = 0; i < images.length; i++) { 
+		document.getElementById("obj" + i).style.top = storage[d]+'px' 
+		document.getElementById("obj" + i).style.left = + storage[d+1]+'px' 
+		d = d+2
+	}
+	for (i = storage.length; i >= 2; i--) { 
+		storage[i] = storage[i-2]
+	}
+	d = 0 
+	var timer = setTimeout("trail()",10) 
+}
+function processEvent(e) { 
+	if (window.event) { 
+		storage[0] = window.event.y+standardbody.scrollTop+10
+		storage[1] = window.event.x+standardbody.scrollLeft+10
+	} else {
+		storage[0] = e.pageY+12
+		storage[1] = e.pageX+12
+	}
+}
+
+	initTrail() 
+	document.onmousemove = processEvent
+</script>
+
+</body>
+</html>

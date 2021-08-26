@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<title>Clare Happy Ending</title>
+<link rel="icon" href="dokidoki.png">
+<meta charset="UTF-8">
+<meta name="author" content="Lynca">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="csproject.css">
+
+<style>
+html, body
+{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body {overflow-x: hidden;}
+div, h1, h2, h3, p {font-family: "Chalkduster", sans-serif}
+
+body{
+        background-image: url("https://tanoshimidotxyz.files.wordpress.com/2016/11/4aa49cc1.jpg?w=660");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+	align-items: center;
+	align-content: center;
+	align-self: center;
+}
+
+nav {background-color:#cccccc;
+}
+
+.footer {
+   position: fixed;
+   left: 10%;
+   right: 10%;
+   bottom: 10%;
+   width: 80%;
+   background-color: rgba(255, 255, 255, 0.6);   
+   border: 2px solid white;
+   border-radius: 25px;
+   color: black;
+   text-align: left;
+}
+.button {
+  float: right;
+  border-radius: 2px;
+  border: 2px solid white;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 8px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2 {
+  float: left;
+  border-radius: 2px;
+  border: 2px solid white;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:before {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -8px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-left: 8px;
+}
+
+.button2:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+input[type=submit]{
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover{opacity: 0.6; transition: 0.3s}
+.centered {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<body>
+
+
+<p class="centered" id="myDIV3"></p>
+<center><p class="centered" id="myDIV2"></p></center>
+
+<nav>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+    <a href="intro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOKI DOKI CS CLUB?</a>
+    <a href="partner.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">YOUR WAIFU</a>
+    <a href="characters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE CHARACTERS</a>
+    <a href="creds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CREDITS</a>
+  </div>
+</div>
+</nav>
+
+<div class="footer">
+<h3 id="name">&nbsp; You</h3>
+<p id="myDIV1">&nbsp; Clare, what's happening at the borders? <br>
+    <button onclick="myFunction()" class="button"><span>Next&nbsp;</span></button></p>
+</div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDIV1").innerHTML = 
+  "&nbsp; The enemy is apparently planning to surprise-attack us from the borders, where the guard is loose.<button onclick='myFunction0()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("myDIV3").innerHTML = "<img src='clare.png' width='500' height='550'>";
+  document.getElementById("name").innerHTML = "&nbsp; Clare"
+}
+function myFunction0() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Heh, what idiots. <br>&nbsp; They should realize that they're too weak to win against us.<br><button onclick='myFunction()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunctiona()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunctiona() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; What should we do, dear?<br><button onclick='myFunction0()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunctionb()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Clare"
+}
+function myFunctionb() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Leave them be.<br>&nbsp; After about a week, they should be running out of supplies.<br>&nbsp; The moment they've realized their lack of supplies and try to retreat, we attack.<br><button onclick='myFunctiona()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction1()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction1() {
+  document.getElementById("myDIV1").innerHTML = 
+  "&nbsp; Ok, I'll go tell the generals that.<br>&nbsp; Great thinking, as always.<br><button onclick='myFunctionb()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction2()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Clare"
+}
+function myFunction2() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; ...Not much of a big deal. <br><button onclick='myFunction1()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction3()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction3() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Clare trots off to tell the military my genius plan.<br>&nbsp; ...Or, so I thought. <br><button onclick='myFunction2()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction4()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction4() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>She walks back to me, and kisses me on the cheek.</i> <br><button onclick='myFunction3()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction5()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction5() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; Don't work yourself too hard, darling. <br><button onclick='myFunction4()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction6()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; Clare"
+}
+function myFunction6() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; //// Go already, you idiot... /// <br><br>&nbsp; <i>Unable to stop blushing, I turn myself away from Clare.<br>&nbsp; I hear her chuckle, then walk away, closing the door.</i><br><button onclick='myFunction5()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction7()' class='button'><span>Next&nbsp;</span></button>";
+  document.getElementById("name").innerHTML = "&nbsp; You"
+}
+function myFunction7() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>You're probably wondering what in the world happened right now.</i><br><button onclick='myFunction6()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction8()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction8() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Ever since that day I got - well, practically abducted - by Clare, I was brought to the Eisenburg <br>&nbsp; Kingdom.<br>&nbsp; While I was still having a hard time catching up to what was happening to me, Clare had already <br>&nbsp; publicly announced me as her husband.</i><br><button onclick='myFunction7()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction9()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction9() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>I had suddenly become the king of the Eisenburg Kingdom.<br>&nbsp; Of course, at first, I got homesick, and I was confused and afraid of everything.<br>&nbsp; During times of loneliness and fear, though, Clare stayed by my side and rubbed my back until I felt <br>&nbsp; better.</i><br><button onclick='myFunction8()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction10()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction10() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Before I knew it, I had fell completely in love with Clare.<br>&nbsp; When I first met her, she only seemed like a crazy, hungry girl who's kill for food.<br>&nbsp; Though reluctantly at first, spending time with her, it helped me to realize that she's a wonderful <br>&nbsp; woman, and a worthy queen.</i> <br><button onclick='myFunction9()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction11()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction11() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>I became more willing to fulfill my new role as king of the Eisenburg Kingdom, and stay faithful to <br>&nbsp; my new waifu, Clare.</i> <br><button onclick='myFunction10()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction12a()' class='button'><span>Next&nbsp;</span></button>	";
+}
+function myFunction12a() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Though it was forceful and sudden, I've come to love my life now.<br>&nbsp; The citizens of the kingdom are all friendly and fair, loyal to the kingdom.</i><br><button onclick='myFunction11()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction13a()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction13a() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Because I originally was a gamer, and was part of the CS Club that also designed games, offering <br>&nbsp; strategies and solutions to use in times of trouble became one of my strengths.<br>&nbsp; Thanks to my gamer habits, I've become trusted by the people too.</i><br><button onclick='myFunction12a()' class='button2'><span>&nbsp;Previous</span></button><button onclick='myFunction14a()' class='button'><span>Next&nbsp;</span></button>";
+}
+function myFunction14a() {
+  document.getElementById("myDIV1").innerHTML =  
+  "&nbsp; <i>Being sent to a new isekai world wasn't as bad as I expected.<br>&nbsp; Ah, now I must hurry...<br><br>&nbsp; My people, and above all, Clare, needs me.<br><button onclick='myFunction13a()' class='button2'><span>&nbsp;Previous</span></button>";
+  document.getElementById("name").innerHTML = " "; 
+  document.getElementById("myDIV2").innerHTML = "<center><h2 style='color:black; background-color: rgba(255, 255, 255, 0.6)'>THE END<br>Route: Happy</h2></center>";
+}
+
+///
+
+var trailLength = 8 
+var path = "http://www.javascriptkit.com/script/script2/cursor.gif" 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body 
+var i,d = 0
+
+function initTrail() { 
+	images = new Array() 
+	for (i = 0; i < parseInt(trailLength); i++) {
+		images[i] = new Image()
+		images[i].src = path
+	}
+	storage = new Array() 
+	for (i = 0; i < images.length*3; i++) {
+		storage[i] = 0
+	}
+	for (i = 0; i < images.length; i++) { 
+		document.write('<div id="obj' + i + '" style="position: absolute; z-Index: 100; height: 0; width: 0"><img src="' + images[i].src + '"></div>')
+	}
+	trail()
+}
+function trail() { 
+	for (i = 0; i < images.length; i++) { 
+		document.getElementById("obj" + i).style.top = storage[d]+'px' 
+		document.getElementById("obj" + i).style.left = + storage[d+1]+'px' 
+		d = d+2
+	}
+	for (i = storage.length; i >= 2; i--) { 
+		storage[i] = storage[i-2]
+	}
+	d = 0 
+	var timer = setTimeout("trail()",10) 
+}
+function processEvent(e) { 
+	if (window.event) { 
+		storage[0] = window.event.y+standardbody.scrollTop+10
+		storage[1] = window.event.x+standardbody.scrollLeft+10
+	} else {
+		storage[0] = e.pageY+12
+		storage[1] = e.pageX+12
+	}
+}
+
+	initTrail() 
+	document.onmousemove = processEvent
+</script>	
+
+</body>
+</html>

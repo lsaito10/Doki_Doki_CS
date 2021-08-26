@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Who's your Partner?</title>
+<link rel="icon" href="dokidoki.png">
+<meta charset="UTF-8">
+<meta name="author" content="Lynca">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="csproject.css">
+<style>
+body {overflow-x: hidden;}
+div, h1, h2, p {font-family: "Chalkduster", sans-serif}
+img:hover{opacity: 0.6; transition: 0.3s; margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+
+body{
+	background:url(partner.png)no-repeat center center ;
+	background-size: 100% 100%;
+	align-items: center;
+	align-content: center;
+	align-self: center;
+}
+
+nav {background-color:#cccccc;
+}
+
+.text {		
+				margin-top: 25px;
+				margin-left: 50px;
+				margin-bottom: 50px;
+				display: block;
+				height: 100px;
+				width: 300px;
+				background: white;
+				color: black;
+				text-align: center;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+			}
+			p {
+				text-align: center;
+				color: black;
+			}
+			.questions {
+				display: inline-block;
+			}
+			.all {
+				text-align:center;
+				vertical-align: middle; 
+			}
+			#box {
+				background-color: #d7dae0;
+				width: 600px;
+				margin-top: 100px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 25px;
+			}
+input[type=submit]{
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover{opacity: 0.6; transition: 0.3s}
+</style>
+
+</style>
+<body>
+
+<nav>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home w3-margin-right"></i>HOME</a>
+    <a href="intro.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOKI DOKI CS CLUB?</a>
+    <a href="partner.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WHO'S YOUR PARTNER?</a>
+    <a href="characters.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE CHARACTERS</a>
+    <a href="creds.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CREDITS</a>
+  </div>
+</div>
+</nav>
+  
+<form action="partner.py">
+	<div id="box">
+	<div class="all">
+	<h1>WELCOME!</h1>
+	<p>This is a quiz to determine your waifu, who you'll be stuck with for the rest of your life.</p>
+	<p>Choose your answers wisely...</p><br>
+	<h1>Q1: What do you like to do when you have free time?</h1>
+		<input type="radio" name="break" value="Clare" checked> EAT! FOOD! NOW! GAMES! STAY HOME!<br>
+		<input type="radio" name="break" value="Kat"> Bully your onii-chan<br>
+		<input type="radio" name="break" value="Jenny"> Go have a walk outside<br>
+		<input type="radio" name="break" value="Laura"> Stalk your crush<br>
+	<h1>Q2: Your crush just spoke to you. How do you react?</h1>
+		<input type="radio" name="react" value="Clare" checked> Food's more important<br>
+		<input type="radio" name="react" value="Kat"> B-baka!/// It's not like I'm happy because you talked to me, okay?<br>
+		<input type="radio" name="react" value="Jenny"> *Blushing* Ohhh... What should I do? ////<br>
+		<input type="radio" name="react" value="Laura"> He... spoke to me... ehehehehehe<br>
+	<h1>Q3: What's your personality like?</h1>
+		<input type="radio" name="personality" value="Clare" checked> Personality? Is that a type of food?<br>
+		<input type="radio" name="personality" value="Kat"> Hmph! Why should I answer that? (I wish I was more honest...)<br>
+		<input type="radio" name="personality" value="Jenny"> Well, my friends do say I'm a bit too serious.<br>
+		<input type="radio" name="personality" value="Laura"> Mysterious...<br>
+	<h1>Q4: A genie appeared, saying that he'll make any one wish come true! What do you wish for?</h1>
+ 		<input type="radio" name="genie" value="Clare" checked> Enough food to support me for the rest of my life<br>
+ 	    <input type="radio" name="genie" value="Kat"> Onii-chan's attention... H-hey! Don't get me wrong, it's not like I want to get closer to him...///<br>
+ 		<input type="radio" name="genie" value="Jenny"> Wishes? No no, I can't be so greedy! Please, don't mind about me.<br>
+ 		<input type="radio" name="genie" value="Laura"> Senpai's hair... fufufufufu<br>
+    <h1>Q5: What is the most important aspect of your life?</h1>
+    	<input type="radio" name="aspect" value="Clare" checked> Food... *drooling*<br>
+   	    <input type="radio" name="aspect" value="Kat"> Being with family! Not you, onii-chan!<br>
+    	<input type="radio" name="aspect" value="Jenny"> Being kind and caring to everyone in the world!<br>
+    	<input type="radio" name="aspect" value="Laura"> Being within a 2m radius near senpai...<br>
+    <br><br><input type="submit" value="Submit"><br><br> 
+</div>
+</div>
+</form>
+<br><br><br><br><br>	
+<script>
+var trailLength = 8 
+var path = "http://www.javascriptkit.com/script/script2/cursor.gif" 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body 
+var i,d = 0
+
+function initTrail() { 
+	images = new Array() 
+	for (i = 0; i < parseInt(trailLength); i++) {
+		images[i] = new Image()
+		images[i].src = path
+	}
+	storage = new Array() 
+	for (i = 0; i < images.length*3; i++) {
+		storage[i] = 0
+	}
+	for (i = 0; i < images.length; i++) { 
+		document.write('<div id="obj' + i + '" style="position: absolute; z-Index: 100; height: 0; width: 0"><img src="' + images[i].src + '"></div>')
+	}
+	trail()
+}
+function trail() { 
+	for (i = 0; i < images.length; i++) { 
+		document.getElementById("obj" + i).style.top = storage[d]+'px' 
+		document.getElementById("obj" + i).style.left = + storage[d+1]+'px' 
+		d = d+2
+	}
+	for (i = storage.length; i >= 2; i--) { 
+		storage[i] = storage[i-2]
+	}
+	d = 0 
+	var timer = setTimeout("trail()",10) 
+}
+function processEvent(e) { 
+	if (window.event) { 
+		storage[0] = window.event.y+standardbody.scrollTop+10
+		storage[1] = window.event.x+standardbody.scrollLeft+10
+	} else {
+		storage[0] = e.pageY+12
+		storage[1] = e.pageX+12
+	}
+}
+
+	initTrail() 
+	document.onmousemove = processEvent
+</script>
+
+</body>
+</html>
